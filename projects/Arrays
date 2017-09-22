@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Arrays 
+{
+	public static void main(String[] args)
+	{
+		Scanner scanner = new Scanner(System.in);
+		int[] a= new int[10];
+		System.out.println("enter the elements");
+		
+		for(int i=0;i<a.length;i++)
+		{
+			
+			a[i]=scanner.nextInt();
+			
+		}
+		totalSum(a);
+	}
+	
+	public static void totalSum(int[] a)
+	{
+		int sum=0;
+		for(int j=0;j<a.length;j++)
+		{
+			sum=sum+a[j];
+		}
+		
+		System.out.println(sum);
+	}
+}
+
+result
+enter the elements
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+total sum:10
